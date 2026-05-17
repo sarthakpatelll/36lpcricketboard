@@ -6,9 +6,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']);
     $password = $_POST['password'];
 
-    if($username === 'Patel' && $password === '36LPL2026') {
+    if($username === 'removed' && $password === 'removed') {
         $_SESSION['admin_logged_in'] = true;
-        $_SESSION['admin_username'] = 'Patel';
+        $_SESSION['admin_username'] = 'removed';
         header("Location: index.php");
         exit();
     } else {
@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <button type="submit" class="btn btn-dark w-100">Login</button>
                 </form>
                 <div class="mt-3 text-center">
-                    <small>Admin: Patel / 36LPL2026</small>
+                    
                 </div>
             </div>
         </div>
